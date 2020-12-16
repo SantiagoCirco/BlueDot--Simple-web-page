@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,34 +10,35 @@
 
 <body>
 
-    <!-- SHOWCASE Y BARRA DE NAVEGACIÓN -->
+    <div class="container">
 
-    <header>
-        <img src="images/navbar_logo.png" alt="Blue Dot Logo">
-        <nav>
-            <ul>
-                <li>EPISODIOS</li>
-                <li>NOSOTROS</li>
-                <li>ENTREVISTAS</li>
-                <li>TÓPICOS</li>
-            </ul>
-        </nav>
-        <div id="showCaseContainer">
-            <h1>Hello <s>world</s> pale blue dot<span id="dot">.</span></h1>
-            <p>El portal de podcasts que explora el mundo de la programación y <br>
-                la tecnología. Nuevos episodios, todos los jueves cada 15 días.
-            </p>
-            <button id="callToActionButton">CONOCÉ MÁS</button>
-        </div>
-    </header>
+        <header>
+            <img src="images/navbar_logo.png" alt="Blue Dot Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">episodios</a></li>
+                    <li><a href="#">nosotros</a></li>
+                    <li><a href="#">entrevistas</a></li>
+                    <li><a href="#">tópicos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
 
-        <!-- EPISODIOS DE PODCASTS -->
+        <section class="hero">
+            <div class="hero__title">
+                <h1>Hello <s>world</s> pale blue dot<span id="dot">.</span></h1>
+                <p>El portal de podcasts que explora el mundo de la programación y <br>
+                    la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+                </p>
+            </div>
+            <button class="hero_cta-button">conocé más</button>
+        </section>
 
-        <section id="episodiosContainer">
+
+        <section class="episodes">
             <h2>Episodios</h2>
-            <article id="podcastsContainer">
+            <article class="episodes__audios">
                 <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%"
                     height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%"
@@ -49,11 +50,13 @@
             </article>
         </section>
 
-        <!-- IMAGEN DE TELEFONO Y BREVE PÁRRAFO  -->
-        
-        <section id="phoneContainer">
-            <img src="images/phone.png" alt="The secret history of Women coding - Imagen">
-            <article id="phoneTextContainer">
+ 
+
+        <section class="phone">
+            <div class="phone__img">
+                <img src="images/phone.png" alt="The secret history of Women coding - Imagen">
+            </div>
+            <article class="phone__info-block">
                 <h3>De dónde venimos</h3>
                 <p>Our posturing, our imagined self-importance,
                     the desilusion that we have some privileged position
@@ -66,11 +69,11 @@
             </article>
         </section>
 
-        <!-- IMAGENES DE INVITADOS ESPECIALES -->
 
-        <section id="invitadosContainer">
+
+        <section class="invitados">
             <h2>Invitadas/os estelares</h2>
-            <article id="imagesGrid">
+            <article class="invitados__images-box">
                 <img src="images/grace-hopper.png" alt="Grace Hopper">
                 <img src="images/Katie-Bouman.png" alt="Katie Bouman">
                 <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
@@ -82,56 +85,55 @@
             </article>
         </section>
 
-        <!-- TEMAS DEL SITIO  -->
 
-        <section id="temasContainer">
+
+        <section class="temas">
             <ul>
-                <li>
+                <li class="temas__item">
                     <img src="images/icon1.png" alt="">
-                    <p>Trabajo Remoto</p>
+                    <p class="temas__item__title">Trabajo Remoto</p>
                 </li>
-                <li>
+                <li class="temas__item">
                     <img src="images/icon2.png" alt="">
-                    <p>Repensando la programación</p>
+                    <p class="temas__item__title">Repensando la programación</p>
                 </li>
-                <li>
+                <li class="temas__item">
                     <img src="images/icon3.png" alt="">
-                    <p>Bases del código</p>
+                    <p class="temas__item__title">Bases del código</p>
                 </li>
-                <li>
+                <li class="temas__item">
                     <img src="images/icon4.png" alt="">
-                    <p>Seguridad informática</p>
+                    <p class="temas__item__title">Seguridad informática</p>
                 </li>
             </ul>
         </section>
 
-        <!-- LLAMADA A LA ACCIÓN  -->
 
-        <section id="novedadesContainer">
-            <h2>¿Querés las últimas novedades?</h2>
-            <button>ESCUCHÁ LOS EPISODIOS</button>
+
+        <section id="novedades">
+            <h2 class="novedades__title">¿Querés las últimas novedades?</h2>
+            <button class="novedades__cta-button">ESCUCHÁ LOS EPISODIOS</button>
         </section>
 
-    </main>
 
-    <!-- FOOTER : REDES SOCIALES -->
+        <footer class="footer">
+            <div class="footer__copyright">
+                <p>&copy;- Hello blue pale dot</p>
+            </div>
+            <div class="footer_socialmedia-box">
+                <ul>
+                    <li><img src="images/spotify-logo.png" alt="spotify"></li>
+                    <li><img src="images/instagram-logo.png" alt="instagram"></li>
+                    <li><img src="images/twitter-logo.png" alt="twitter"></li>
+                    <li><img src="images/facebook-logo.png" alt="facebook"></li>
+                    <li><img src="images/telegram-logo.png" alt="telegram"></li>
+                </ul>
+            </div>
+        </footer>
 
-    <footer>
-        <div id="copyContainer">
-            <p>&copy;- Hello blue pale dot</p>
-        </div>
-        <div id="SocialMediaLinksContainer">
-            <ul>
-                <li><img src="images/spotify-logo.png" alt="spotify"></li>
-                <li><img src="images/instagram-logo.png" alt="instagram"></li>
-                <li><img src="images/twitter-logo.png" alt="twitter"></li>
-                <li><img src="images/facebook-logo.png" alt="facebook"></li>
-                <li><img src="images/telegram-logo.png" alt="telegram"></li>
-            </ul>
-        </div>
-    </footer>
+    </div>
+    <!-- /.container -->
 
 </body>
 
 </html>
-
