@@ -1,8 +1,10 @@
-
+// El archivo [_general.scss] contiene una configuración inicial de estilos y
+// todos los estilos que se comparten en la gran mayoría de elementos.
 
 
 // ------------------------------------------------
-//             Initial Config
+//                      Initial Config
+// ------------------------------------------------
 
 *,
 *::after,
@@ -22,8 +24,13 @@ body{
 
 
 // ------------------------------------------------
-//         Headings
+//                          Headings
+// ------------------------------------------------
 
 
-
-
+h1,h2{
+    font-size:3.2rem;
+}
+h3,h4,h5,h6{
+    font-size:2.4rem;
+}
