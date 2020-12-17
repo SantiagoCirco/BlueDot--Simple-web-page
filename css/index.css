@@ -6,4 +6,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
 /*# sourceMappingURL=index.css.map */
