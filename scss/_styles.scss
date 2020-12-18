@@ -16,14 +16,35 @@ header{
     align-items: center;
     min-width: 100%;
     img{
+        width: 2rem;
+        height: auto;
         margin: 0 1.4rem;
     }
 }
 
+
 .nav{
+    // nav
     &__menu-box{
-        display: none;
+        // display: none;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 22.4rem;
+        background-color: $color-primary;
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-around;
+        // nav__menu-box
+            a{
+                color: $color-text-white;
+                padding-left: 1.6rem;
+                font-size:1.6rem;
+            }
     }
+    // nav
     &__hamburguer{
         position: relative;
         width: 18px;
@@ -32,16 +53,54 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        // nav__hamburguer
         &__line1,&__line2,&__line3{
             background-color: black;
             width:100%;
             height: 2.2px;
         }   
+        // nav__hamburguer
         input{
             position: absolute;
             z-index: 2;
             opacity: 0;
             margin: 2px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px){
+
+    header{
+        height: 88px;
+        img{
+            width: 3.2rem;
+            height: auto;
+            margin: 0 1.4rem;
+        }
+    }
+
+
+    .nav{
+        &__menu-box{
+        position: static;
+        width: 500px;
+        height: auto;
+        background-color: white;
+        display: flex;  
+        flex-direction: row;
+        justify-content: space-around;
+        // nav__menu-box
+            a{
+                color: $color-text-dark;
+                padding-left: 1.6rem;
+                font-size:1.6rem;
+                letter-spacing: 0;
+            }   
+        }
+        &__hamburguer{
+            display: none;
         }
     }
 }
