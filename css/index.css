@@ -57,24 +57,34 @@ ul {
   }
 }
 
-header {
-  height: 44px;
+.logo {
+  background-color: #0000EC;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  margin: 0 1.4rem;
+  color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 100%;
 }
 
-header img {
-  width: 2rem;
-  height: auto;
-  margin: 0 1.4rem;
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 1.6rem;
+    font-size: 1.4rem;
+  }
 }
 
 .nav__menu-box {
@@ -100,6 +110,30 @@ header img {
   color: #fff;
   padding-left: 1.6rem;
   font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav__menu-box {
+    position: static;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav__menu-box a {
+    color: #060A24;
+    padding-left: 1.6rem;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+  }
 }
 
 .nav__hamburguer {
@@ -133,37 +167,28 @@ header img {
 }
 
 @media only screen and (min-width: 768px) {
-  header {
-    height: 88px;
-  }
-  header img {
-    width: 3.2rem;
-    height: auto;
-    margin: 0 1.4rem;
-  }
-  .nav__menu-box {
-    position: static;
-    width: 500px;
-    height: auto;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .nav__menu-box a {
-    color: #060A24;
-    padding-left: 1.6rem;
-    font-size: 1.6rem;
-    letter-spacing: 0;
-  }
   .nav__hamburguer {
     display: none;
+  }
+}
+
+header {
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 88px;
   }
 }
 /*# sourceMappingURL=index.css.map */

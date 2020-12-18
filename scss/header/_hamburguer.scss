@@ -1,0 +1,32 @@
+
+
+
+.nav__hamburguer{
+        position: relative;
+        width: 18px;
+        height: 18px;
+        margin: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        // nav__hamburguer
+        &__line1,&__line2,&__line3{
+            background-color: black;
+            width:100%;
+            height: 2.2px;
+        }   
+        // nav__hamburguer
+        input{
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            margin: 2px;
+        }
+    }
+
+
+@media only screen and (min-width:768px){
+    .nav__hamburguer{
+        display: none;
+     }
+}
