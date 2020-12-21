@@ -24,6 +24,7 @@ body{
     font-size: 1.6rem;
     font-family: 'IBM Plex Sans', sans-serif;
     letter-spacing: 0;
+    overflow-x: hidden;
 }
 
 
@@ -75,7 +76,9 @@ ul{
 
 
 .container{
-    width: 100%;
+    width: 96%;
+    margin:auto;
+    overflow: hidden;
 }
 
 
@@ -98,5 +101,6 @@ ul{
     .container{
     width: 85%;
     margin: auto;
+    overflow: initial;
 }
 }

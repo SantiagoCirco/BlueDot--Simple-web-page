@@ -13,17 +13,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
-        margin: 0 1.4rem;
-    }
 }
 
 @media only screen and (min-width:768px){
     header{
         height: 88px;
         img{
-        width: 36px;
-        height: auto;
-    }
+            width: 36px;
+            height: auto;
+        }
     }
 }

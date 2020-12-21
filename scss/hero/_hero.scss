@@ -1,0 +1,56 @@
+
+
+
+.hero{
+    padding: 10vw 0 1.6rem 1.6rem;
+    h1{
+        width: 90%;
+    }
+    &__desc{
+        color: $color-text-dark; 
+        &--mobile{
+            font-size: 1.4rem;
+            margin-top: 6vw;
+        }
+        &--desktop{
+            display: none;
+        }
+    }
+    &__cta-button{
+        margin-top: 10vw;
+        width: 100%;
+        font-family: 'IBMPlexMono-Medium',monospace;
+        font-weight: 600;
+        display: block;
+        padding: .8em;
+        text-align: center;
+        line-height: 2.2rem;
+        background-color: $color-accent;
+    }
+}
+
+
+@media only screen and (min-width:768px){
+    .hero{
+        padding-left: 8vw;
+        h1{
+            line-height: 8.4rem;
+        }
+        &__desc{
+            &--mobile{
+                display:none;
+            }
+            &--desktop{
+                font-size: 1.6rem;
+                display:block;
+            }
+        }
+        &__cta-button{
+            margin-top: 4vw;
+            width: 20%;    
+            padding: .8em;
+            line-height: 2.2rem;
+        }
+
+    }
+}
