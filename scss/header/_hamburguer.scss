@@ -28,8 +28,8 @@
             content:'';
         }
         span{
-            &::before{  top: 6px; }
-            &::after {  top:-6px; }
+            &::before{  top:    6px; }
+            &::after {  bottom: 6px; }
         }
     }
 }

@@ -23,6 +23,7 @@ body{
     color: $color-text-dark;
     font-size: 1.6rem;
     font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 0;
 }
 
 
@@ -34,11 +35,13 @@ body{
 h1,h2{
     font-size:3.6rem;
     font-weight: 400;
+    line-height: 4.2rem;
     
 }
 
 h3,h4,h5,h6{
     font-size:2.4rem;
+    line-height: 3.2rem;
 }
 
 
@@ -51,9 +54,15 @@ p,a{
     font-family: 'IBM Plex Mono', monospace;
 }
 
+p{
+    line-height: 2.2rem;
+}
+
+
 a{
     text-transform: uppercase;
     text-decoration: none;
+    line-height: 2.8rem;
 }
 
 ul{
@@ -71,16 +80,20 @@ ul{
 
 
 
-
+// ================================================
+//           MEDIAS QUERYS
+// ================================================
 
 
 
 @media only screen and (min-width:768px){
     h1,h2{
     font-size:6.4rem;
+    line-height: 6.2rem;
     }
     h3,h4,h5,h6{
     font-size:4.8rem;
+    line-height: 3.2rem;
     }
     .container{
     width: 85%;
