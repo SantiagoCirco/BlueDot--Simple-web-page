@@ -1,42 +1,50 @@
+
+
+
+// la nav-bar es la lista de links que aparecen al presionar el hamb menu
 .nav{
-    // nav
-    &__menu-box{
-        // display: none;
-        position: absolute;
-        top: 44px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 22.4rem;
-        background-color: $color-primary;
-        display: flex;  
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $color-primary;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 200ms ease-in-out;
+    ul{
+        height: 224px;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
-        // nav__menu-box
-            a{
-                color: $color-text-white;
-                padding-left: 1.6rem;
-                font-size:1.6rem;
-            }
-    }  
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        opacity: 0;
+        padding: 1.4rem;
+        transition: opacity 300ms ease-in-out;
+    }
 }
 
-@media only screen and (min-width:768px){
+
+
+@media only screen and (min-width :768px){
     .nav{
-        &__menu-box{
-        position: static;
-        width: 500px;
-        height: auto;
+        transform: scale(1,1);
         background-color: white;
-        display: flex;  
-        flex-direction: row;
-        justify-content: space-around;
-            a{
-                color: $color-text-dark;
-                padding-left: 1.6rem;
-                font-size:1.6rem;
-                letter-spacing: 0;
-            }   
-        }   
+        position: static;
+        width: 100%;
+        ul{
+            flex-direction: row;
+            justify-content: flex-end;
+            height: auto;
+        }
+        li{
+            margin-left: 4rem;
+        }
+        a{
+            opacity: 1;
+            color: $color-text-dark;
+        }
     }
 }

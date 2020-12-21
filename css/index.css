@@ -57,44 +57,24 @@ ul {
   }
 }
 
-.logo {
-  background-color: #0000EC;
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 1.2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 1.1px;
-  margin: 0 1.4rem;
-  color: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .logo {
-    width: 3.2rem;
-    height: 3.2rem;
-    border-radius: 1.6rem;
-    font-size: 1.4rem;
-  }
-}
-
-.nav__menu-box {
+.nav {
   position: absolute;
-  top: 44px;
+  top: 100%;
   left: 0;
-  right: 0;
   width: 100%;
-  height: 22.4rem;
   background-color: #0000EC;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.nav ul {
+  height: 224px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,74 +86,103 @@ ul {
       justify-content: space-around;
 }
 
-.nav__menu-box a {
-  color: #fff;
-  padding-left: 1.6rem;
-  font-size: 1.6rem;
+.nav a {
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  padding: 1.4rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
-  .nav__menu-box {
-    position: static;
-    width: 500px;
-    height: auto;
+  .nav {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
     background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: static;
+    width: 100%;
+  }
+  .nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: auto;
   }
-  .nav__menu-box a {
+  .nav li {
+    margin-left: 4rem;
+  }
+  .nav a {
+    opacity: 1;
     color: #060A24;
-    padding-left: 1.6rem;
-    font-size: 1.6rem;
-    letter-spacing: 0;
   }
 }
 
-.nav__hamburguer {
-  position: relative;
-  width: 18px;
-  height: 18px;
-  margin: 0 2rem;
+.toggle {
+  display: none;
+}
+
+.toggle__label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0 1.6rem;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav__hamburguer__line1, .nav__hamburguer__line2, .nav__hamburguer__line3 {
+.toggle__label span, .toggle__label span::after, .toggle__label span::before {
+  display: block;
+  height: 2px;
   background-color: black;
-  width: 100%;
-  height: 2.2px;
+  width: 20px;
+  position: relative;
 }
 
-.nav__hamburguer input {
+.toggle__label span::before, .toggle__label span::after {
   position: absolute;
-  z-index: 2;
-  opacity: 0;
-  margin: 2px;
+  content: '';
+}
+
+.toggle__label span::before {
+  top: 6px;
+}
+
+.toggle__label span::after {
+  top: -6px;
+}
+
+.toggle:checked ~ nav {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+.toggle:checked ~ nav a {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  .nav__hamburguer {
+  .toggle__label {
     display: none;
   }
 }
 
 header {
   height: 44px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +192,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 100%;
+}
+
+header img {
+  margin: 0 1.4rem;
 }
 
 @media only screen and (min-width: 768px) {

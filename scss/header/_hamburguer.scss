@@ -1,32 +1,52 @@
 
 
 
-.nav__hamburguer{
-        position: relative;
-        width: 18px;
-        height: 18px;
-        margin: 0 2rem;
+
+
+// - Toggle es el input del tipo checkbox
+// - label es donde está el contenedor del hamburguer menu (lo que se ve en pantalla)
+.toggle{
+    display: none;
+    &__label{
+        position: absolute;
+        right: 0;
+        top:0;
+        margin: 0 1.6rem;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        // nav__hamburguer
-        &__line1,&__line2,&__line3{
+        align-items: center;
+        // El span y su [before] y [after] crean las tres líneas del menu hamburguesa
+        span,span::after,span::before{
+            display: block;
+            height: 2px;
             background-color: black;
-            width:100%;
-            height: 2.2px;
-        }   
-        // nav__hamburguer
-        input{
+            width: 20px;
+            position:relative;
+        }
+        span::before,span::after{
             position: absolute;
-            z-index: 2;
-            opacity: 0;
-            margin: 2px;
+            content:'';
+        }
+        span{
+            &::before{  top: 6px; }
+            &::after {  top:-6px; }
         }
     }
+}
 
 
-@media only screen and (min-width:768px){
-    .nav__hamburguer{
+// Al activar el toggle, aparece la barra de navegacion con sus items
+.toggle:checked ~ nav{
+    transform: scale(1,1);
+    transition: transform 400ms ease-in-out;
+}
+.toggle:checked ~ nav a{
+    opacity: 1;
+}
+
+
+@media only screen and (min-width :768px){
+    .toggle__label{
         display: none;
-     }
+    }
 }

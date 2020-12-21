@@ -1,14 +1,21 @@
 
-@import 'logo';
 @import 'nav-bar';
 @import 'hamburguer';
 
+
+// el header contiene todo lo relacionado al menu superior :
+//   - logo
+//   - hambuerguer menu ( toggle y label )
+//   - nav-bar con la lista de items
 header{
     height: 44px;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 100%;
+    img{
+        margin: 0 1.4rem;
+    }
 }
 
 @media only screen and (min-width:768px){

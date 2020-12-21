@@ -11,29 +11,26 @@
 <body>
 
     <div class="container">
-
         <header>
-            <div class="logo">bd</div>
+            <img src="images/logo.svg" alt="">
+            <!-- Checkbox invisible (hamburguer menu function) -->
+            <input type="checkbox" id="toggle" class="toggle">
             <nav class="nav">
-                <div class="nav__hamburguer">
-                    <input type="checkbox">
-                    <div class="nav__hamburguer__line1"></div>
-                    <div class="nav__hamburguer__line2"></div>
-                    <div class="nav__hamburguer__line3"></div>
-                </div>
-
-                <ul class="nav__menu-box">
-                    <li class="nav__menu-box__item"><a href="#">episodios</a></li>
-                    <li class="nav__menu-box__item"><a href="#">nosotros</a></li>
-                    <li class="nav__menu-box__item"><a href="#">entrevistas</a></li>
-                    <li class="nav__menu-box__item"><a href="#">tópicos</a></li>
+                <ul>
+                    <li><a href="#">episodios</a></li>
+                    <li><a href="#">nosotros</a></li>
+                    <li><a href="#">entrevistas</a></li>
+                    <li><a href="#">tópicos</a></li>
                 </ul>
-
             </nav>
+            <!-- Hamburguer Menu -->
+            <label for="toggle" class="toggle__label">
+                <span></span>
+            </label>
         </header>
 
 
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="hero__title">
                 <h1>Hello <s>world</s> pale blue dot<span id="dot">.</span></h1>
                 <p>El portal de podcasts que explora el mundo de la programación y <br>
@@ -41,7 +38,7 @@
                 </p>
             </div>
             <button class="hero_cta-button">conocé más</button>
-        </section>
+        </section> -->
 
 
         <!-- <section class="episodes">
