@@ -43,6 +43,7 @@ h1,h2{
 h3,h4,h5,h6{
     font-size:2.4rem;
     line-height: 3.2rem;
+    font-weight: 500;
 }
 
 
@@ -96,7 +97,7 @@ ul{
         line-height: 6.2rem;
     }
     h3,h4,h5,h6{
-        font-size:4.8rem;
+        font-size:2.4rem;
         line-height: 3.2rem;
     }
     p{
@@ -104,7 +105,9 @@ ul{
     }
     .container{
         width: 85%;
+        // max-width: 1440px;
         margin: auto;
         overflow: initial;
     }
 }
+

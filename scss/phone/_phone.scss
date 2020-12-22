@@ -19,9 +19,11 @@
         align-items: center;
         h2{
             font-size: 3.6rem;
+            margin-top: 3rem;
         }
         p{
             font-size: 1.4rem;
+            margin-top: 1rem;
         }
         img{
             width: 30%;
@@ -33,14 +35,17 @@
     }
 }
 
-@media only screen and (min-width:1000px){
-    h2{
-        font-size: 4.8rem;
+@media only screen and (min-width:900px){
+    .phone{
+        h2{
+            font-size: 4.8rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+        &__info-block{
+            width: 36%;
+        }
     }
-    p{
-        font-size: 1.6rem;
-    }
-    &__info-block{
-        width: 36%;
-    }
+    
 }

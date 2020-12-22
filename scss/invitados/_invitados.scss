@@ -1,0 +1,41 @@
+.invitados{
+    margin-top: 12%;
+    width: 100%;
+    h2{
+        margin-left: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    &__images-box{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:500px){
+    .invitados{
+        h2{
+            margin-left: 15%;
+            margin-bottom: 3.6rem;
+        }
+        &__images-box{
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        img{
+            width: 33.3%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .invitados{
+        margin-top: 2%;
+    }
+}
