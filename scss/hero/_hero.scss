@@ -2,14 +2,13 @@
 
 
 .hero{
-    padding: 10vw 0 1.6rem 1.6rem;
+    padding: 10vw 0 1.6rem 0;
     h1{
         width: 90%;
     }
     &__desc{
         color: $color-text-dark; 
         &--mobile{
-            font-size: 1.4rem;
             margin-top: 6vw;
         }
         &--desktop{
@@ -41,8 +40,8 @@
                 display:none;
             }
             &--desktop{
-                font-size: 1.6rem;
                 display:block;
+                padding-left: .5rem;
             }
         }
         &__cta-button{

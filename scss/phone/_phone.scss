@@ -1,0 +1,46 @@
+.phone{
+    img{
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+    }
+    h2{
+        margin-top: 1.4rem;
+    }
+    p{
+        margin-top: 1.4em;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .phone{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        h2{
+            font-size: 3.6rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        img{
+            width: 30%;
+        }
+        &__info-block{
+            width: 40%;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px){
+    h2{
+        font-size: 4.8rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    &__info-block{
+        width: 36%;
+    }
+}

@@ -56,6 +56,7 @@ p,a{
 }
 
 p{
+    font-size: 1.4rem;
     line-height: 2.2rem;
 }
 
@@ -76,9 +77,9 @@ ul{
 
 
 .container{
-    width: 96%;
+    width: 90%;
     margin:auto;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 
@@ -91,16 +92,19 @@ ul{
 
 @media only screen and (min-width:768px){
     h1,h2{
-    font-size:6.4rem;
-    line-height: 6.2rem;
+        font-size:6.4rem;
+        line-height: 6.2rem;
     }
     h3,h4,h5,h6{
-    font-size:4.8rem;
-    line-height: 3.2rem;
+        font-size:4.8rem;
+        line-height: 3.2rem;
+    }
+    p{
+        font-size: 1.6rem;
     }
     .container{
-    width: 85%;
-    margin: auto;
-    overflow: initial;
-}
+        width: 85%;
+        margin: auto;
+        overflow: initial;
+    }
 }

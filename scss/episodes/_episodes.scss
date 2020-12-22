@@ -1,0 +1,62 @@
+.episodes{
+    position: relative;
+    color: white;
+    h2{
+        font-size:3.6rem;
+        margin-top: 22%;
+        margin-bottom: 5%;
+    }
+    &::before{
+        content: '';
+        height: 120%;
+        background-image: linear-gradient(
+            90deg,
+            $color-primary-linear2,
+            $color-primary-linear1
+        );
+        position: absolute;
+        width: 100vw;
+        top: -5%;
+        z-index: -5;
+        transform: skew(0,-6deg);
+    }
+    &__audios iframe{
+        margin-bottom: .6em;
+        width: 100%;
+        height:232px;
+    }
+}
+
+
+
+@media only screen and (min-width:768px){
+    .episodes{
+        h2{
+            font-size:4.8rem;
+            margin-top: 12%;
+            padding-left: 6rem;
+        }
+        &::before{
+            top: -15%;
+            height: 130%;
+        }
+        &__audios{
+            display: flex;
+            width: 85%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__audios iframe{
+            margin-bottom: 2em;
+            width: 45%;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .episodes{
+        h2{
+            margin-left: 11%;
+        }
+    }
+}

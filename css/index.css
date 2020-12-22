@@ -36,6 +36,7 @@ p, a {
 }
 
 p {
+  font-size: 1.4rem;
   line-height: 2.2rem;
 }
 
@@ -50,9 +51,8 @@ ul {
 }
 
 .container {
-  width: 96%;
+  width: 90%;
   margin: auto;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -64,6 +64,9 @@ ul {
     font-size: 4.8rem;
     line-height: 3.2rem;
   }
+  p {
+    font-size: 1.6rem;
+  }
   .container {
     width: 85%;
     margin: auto;
@@ -74,7 +77,9 @@ ul {
 .nav {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -5%;
+  width: 110%;
+  z-index: 2;
   background-color: #0000EC;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
@@ -217,7 +222,7 @@ header {
 }
 
 .hero {
-  padding: 10vw 0 1.6rem 1.6rem;
+  padding: 10vw 0 1.6rem 0;
 }
 
 .hero h1 {
@@ -229,7 +234,6 @@ header {
 }
 
 .hero__desc--mobile {
-  font-size: 1.4rem;
   margin-top: 6vw;
 }
 
@@ -260,8 +264,8 @@ header {
     display: none;
   }
   .hero__desc--desktop {
-    font-size: 1.6rem;
     display: block;
+    padding-left: .5rem;
   }
   .hero__cta-button {
     margin-top: 4vw;
@@ -273,21 +277,117 @@ header {
 
 .episodes {
   position: relative;
+  color: white;
 }
 
 .episodes h2 {
+  font-size: 3.6rem;
   margin-top: 22%;
+  margin-bottom: 5%;
 }
 
 .episodes::before {
   content: '';
   height: 120%;
-  background-color: blue;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0000A3), to(#0000FF));
+  background-image: linear-gradient(90deg, #0000A3, #0000FF);
   position: absolute;
   width: 100vw;
   top: -5%;
   z-index: -5;
   -webkit-transform: skew(0, -6deg);
           transform: skew(0, -6deg);
+}
+
+.episodes__audios iframe {
+  margin-bottom: .6em;
+  width: 100%;
+  height: 232px;
+}
+
+@media only screen and (min-width: 768px) {
+  .episodes h2 {
+    font-size: 4.8rem;
+    margin-top: 12%;
+    padding-left: 6rem;
+  }
+  .episodes::before {
+    top: -15%;
+    height: 130%;
+  }
+  .episodes__audios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .episodes__audios iframe {
+    margin-bottom: 2em;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .episodes h2 {
+    margin-left: 11%;
+  }
+}
+
+.phone img {
+  width: 100%;
+  height: auto;
+  margin-top: 2em;
+}
+
+.phone h2 {
+  margin-top: 1.4rem;
+}
+
+.phone p {
+  margin-top: 1.4em;
+}
+
+@media only screen and (min-width: 768px) {
+  .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .phone h2 {
+    font-size: 3.6rem;
+  }
+  .phone p {
+    font-size: 1.4rem;
+  }
+  .phone img {
+    width: 30%;
+  }
+  .phone__info-block {
+    width: 40%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h2 {
+    font-size: 4.8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  __info-block {
+    width: 36%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
