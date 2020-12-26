@@ -235,6 +235,10 @@ header {
   width: 90%;
 }
 
+.hero__title--dot {
+  color: #0000EC;
+}
+
 .hero__description {
   color: #060A24;
 }
@@ -307,7 +311,7 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(#0000A3), to(#0000FF));
   background-image: linear-gradient(90deg, #0000A3, #0000FF);
   position: absolute;
-  width: 100vw;
+  width: 100%;
   top: -5%;
   z-index: -5;
   -webkit-transform: skew(0, -6deg);

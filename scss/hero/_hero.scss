@@ -5,6 +5,9 @@
     padding: 10vw 0 1.6rem 0;
     &__title{
         width: 90%;
+        &--dot{
+            color: $color-primary;
+        }
     }
     &__description{
         color: $color-text-dark; 

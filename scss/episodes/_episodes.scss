@@ -16,7 +16,7 @@
             $color-primary-linear1
         );
         position: absolute;
-        width: 100vw;
+        width: 100%;
         top: -5%; // Hack : El contenendor de fondo está forzado para que coincida
         z-index: -5;
         transform: skew(0,-6deg);
