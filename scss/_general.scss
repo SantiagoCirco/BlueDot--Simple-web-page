@@ -77,10 +77,9 @@ ul{
 // ------------------------------------------------
 
 
-.container{
+.padding{
     width: 90%;
     margin:auto;
-    // overflow: hidden;
 }
 
 
@@ -103,7 +102,7 @@ ul{
     p{
         font-size: 1.6rem;
     }
-    .container{
+    .padding{
         width: 85%;
         // max-width: 1440px;
         margin: auto;
@@ -111,3 +110,8 @@ ul{
     }
 }
 
+@media only screen and (min-width:1440px){
+    .padding{
+        width: 1440px;
+    }
+}

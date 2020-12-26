@@ -23,6 +23,14 @@
     }
 }
 
+@media only screen and (min-width:600px){
+    .novedades{
+        &__button{
+            width: 40%;
+        }
+    }
+}
+
 @media only screen and (min-width:768px){
     .novedades{
         width: 100%;
@@ -33,9 +41,17 @@
             margin-top: 5%;
         }
         &__button{
-            width: 25%;
+            width: 30%;
             padding: .8em;
             line-height: 2.8rem;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .novedades{
+        &__button{
+            width: 25%;
         }
     }
 }

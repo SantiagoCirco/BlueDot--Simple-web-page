@@ -18,7 +18,7 @@ header{
 @media only screen and (min-width:768px){
     header{
         height: 88px;
-        img{
+        &__logo{
             width: 36px;
             height: auto;
         }

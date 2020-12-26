@@ -12,13 +12,13 @@
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 200ms ease-in-out;
-    ul{
+    &__list{
         height: 224px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-    a{
+    &__link{
         color: white;
         text-decoration: none;
         opacity: 0;
@@ -35,15 +35,15 @@
         background-color: white;
         position: static;
         width: 100%;
-        ul{
+        &__list{
             flex-direction: row;
             justify-content: flex-end;
             height: auto;
         }
-        li{
+        &__item{
             margin-left: 4rem;
         }
-        a{
+        &__link{
             opacity: 1;
             color: $color-text-dark;
         }

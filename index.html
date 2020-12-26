@@ -10,17 +10,16 @@
 
 <body>
 
-    <div class="container">
-        <header>
-            <img src="images/logo.svg" alt="">
+        <header class="header padding">
+            <img class="header__logo" src="images/logo.svg" alt="">
             <!-- Checkbox invisible (hamburguer menu function) -->
             <input type="checkbox" id="toggle" class="toggle">
             <nav class="nav">
-                <ul>
-                    <li><a href="#">episodios</a></li>
-                    <li><a href="#">nosotros</a></li>
-                    <li><a href="#">entrevistas</a></li>
-                    <li><a href="#">tópicos</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">episodios</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">nosotros</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">entrevistas</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">tópicos</a></li>
                 </ul>
             </nav>
             <!-- Hamburguer Menu -->
@@ -30,44 +29,43 @@
         </header>
 
 
-        <section class="hero">
-            <h1>Hello <s>world</s> pale blue dot<span id="dot">.</span></h1>
-            <p class="hero__desc--desktop">El portal de podcasts que explora el mundo de la programación y<br>
+        <section class="hero padding">
+            <h1 class="hero__title">Hello <s>world</s> pale blue dot<span class="hero__title--dot">.</span></h1>
+            <p class="hero__description--desktop">El portal de podcasts que explora el mundo de la programación y<br>
                 la tecnología. Nuevos episodios, todos los jueves cada 15 días.
             </p>
-            <p class="hero__desc--mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos
+            <p class="hero__description--mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos
                 los
                 jueves cada 15 días.
             </p>
             <a class="hero__button">conocé más</a>
         </section>
-    </div>
 
     <section class="episodes">
-        <h2 class="container">Episodios</h2>
-        <article class="episodes__audios container">
-            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0"
+        <h2 class="episodes__title">Episodios</h2>
+        <article class="episodes__audios">
+            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0"
                 allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0"
+            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0"
                 allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0"
+            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0"
                 allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0"
+            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0"
                 allowtransparency="true" allow="encrypted-media"></iframe>
         </article>
     </section>
 
 
 
-    <section class="phone">
-        <img src="images/phone.png" alt="The secret history of Women coding - Imagen">
-        <article class="phone__info-block container">
-            <h2>De dónde venimos</h2>
-            <p>Our posturing, our imagined self-importance,
+    <section class="phone padding">
+        <img class="phone__img" src="images/phone.png" alt="The secret history of Women coding - Imagen">
+        <article class="phone__info-block">
+            <h2 class="info-block__title">De dónde venimos</h2>
+            <p class="info-block__description">Our posturing, our imagined self-importance,
                 the desilusion that we have some privileged position
                 in the Universe, are challenged by this point of pale light.
             </p>
-            <p> Our plante is a lonely speck in the great enveloping cosmic dark.
+            <p class="info-block__description"> Our plante is a lonely speck in the great enveloping cosmic dark.
                 In our obscurity, in all this vastness, there is no hint that help will
                 come from elsewhere to save us from ourselves.
             </p>
@@ -77,58 +75,68 @@
 
 
     <section class="invitados">
-        <h2>Invitadas/os estelares</h2>
-        <article class="invitados__images-box">
-            <img src="images/grace-hopper.png" alt="Grace Hopper">
-            <img src="images/Katie-Bouman.png" alt="Katie Bouman">
-            <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
-            <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
+        <h2 class="invitados__title">Invitadas/os estelares</h2>
+        <article class="invitados__grid-view">
+            <img class="invitados__img" src="images/grace-hopper.png" alt="Grace Hopper">
+            <img class="invitados__img" src="images/Katie-Bouman.png" alt="Katie Bouman">
+            <img class="invitados__img" src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+            <img class="invitados__img" src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
                 alt="Una computadora E.R.A. Univac 1103 de los 50s">
-            <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+            <img class="invitados__img" src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
                 alt="Operadoras de la computadora Eniac - La primera computadora programable en el mundo.">
-            <img src="images/susan-kare.png" alt="Susan Kare">
+            <img class="invitados__img" src="images/susan-kare.png" alt="Susan Kare">
         </article>
     </section>
 
 
 
-    <section class="temas container">
-        <h2>Algunos de nuestros temas</h2>
-        <ul>
-            <li class="temas__item">
-                <img src="images/icon1.png" alt="">
-                <h3 class="temas__item__title">Trabajo Remoto</h3>
+    <section class="temas padding">
+        <h2 class="temas__title">Algunos de nuestros temas</h2>
+        <ul class="temas__list">
+            <li class="temas__card">
+                <img class="card__img" src="images/icon1.png" alt="temas icono">
+                <h3 class="card__title">Trabajo Remoto</h3>
             </li>
-            <li class="temas__item">
-                <img src="images/icon2.png" alt="">
-                <h3 class="temas__item__title">Repensando la programación</h3>
+            <li class="temas__card">
+                <img class="card__img" src="images/icon2.png" alt="temas icono">
+                <h3 class="card__title">Repensando la programación</h3>
             </li>
-            <li class="temas__item">
-                <img src="images/icon3.png" alt="">
-                <h3 class="temas__item__title">Bases del código</h3>
+            <li class="temas__card">
+                <img class="card__img" src="images/icon3.png" alt="temas icono">
+                <h3 class="card__title">Bases del código</h3>
             </li>
-            <li class="temas__item">
-                <img src="images/icon4.png" alt="">
-                <h3 class="temas__item__title">Seguridad informática</h3>
+            <li class="temas__card">
+                <img class="card__img" src="images/icon4.png" alt="temas icono">
+                <h3 class="card__title">Seguridad informática</h3>
             </li>
         </ul>
     </section>
 
 
-    <section class="novedades container">
+    <section class="novedades padding">
         <h2 class="novedades__title">¿Querés las últimas novedades?</h2>
         <a class="novedades__button">ESCUCHÁ LOS EPISODIOS</a>
     </section>
 
 
-    <footer class="footer">
-        <p>&copy;- Hello blue pale dot</p>
-        <ul>
-            <li><img src="images/spotify-logo.png" alt="spotify"></li>
-            <li><img src="images/instagram-logo.png" alt="instagram"></li>
-            <li><img src="images/twitter-logo.png" alt="twitter"></li>
-            <li><img src="images/facebook-logo.png" alt="facebook"></li>
-            <li><img src="images/telegram-logo.png" alt="telegram"></li>
+    <footer class="footer padding">
+        <p class="footer__description">&copy;- Hello blue pale dot</p>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <img class="footer__img" src="images/spotify-logo.png" alt="spotify">
+            </li>
+            <li class="footer__item">
+                <img class="footer__img" src="images/instagram-logo.png" alt="instagram">
+            </li>
+            <li class="footer__item">
+                <img class="footer__img" src="images/twitter-logo.png" alt="twitter">
+            </li>
+            <li class="footer__item">
+                <img class="footer__img" src="images/facebook-logo.png" alt="facebook">
+            </li>
+            <li class="footer__item">
+                <img class="footer__img" src="images/telegram-logo.png" alt="telegram">
+            </li>
         </ul>
     </footer>
 

@@ -1,17 +1,17 @@
 .invitados{
     margin-top: 12%;
     width: 100%;
-    h2{
+    &__title{
         margin-left: 1.6rem;
         margin-bottom: 1rem;
     }
-    &__images-box{
+    &__grid-view{
         padding: 0;
         margin: 0;
         display: flex;
         flex-direction: column;
     }
-    img{
+    &__img{
         width: 100%;
         height: auto;
     }
@@ -19,16 +19,16 @@
 
 @media only screen and (min-width:500px){
     .invitados{
-        h2{
+        &__title{
             margin-left: 15%;
             margin-bottom: 3.6rem;
         }
-        &__images-box{
+        &__grid-view{
             width: 100%;
             flex-direction: row;
             flex-wrap: wrap;
         }
-        img{
+        &__img{
             width: 33.3%;
         }
     }
