@@ -144,6 +144,17 @@ ul {
     opacity: 1;
     color: #060A24;
   }
+  .nav__link:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+  }
+  .nav__link--active {
+    color: #060A24;
+    opacity: .56;
+    text-decoration: line-through;
+  }
 }
 
 .toggle {
@@ -253,14 +264,19 @@ header {
 
 .hero__button {
   font-family: 'IBMPlexMono-Medium',monospace;
-  font-weight: 600;
   display: block;
   padding: .8em;
   text-align: center;
   width: 100%;
   line-height: 2.2rem;
   background-color: #00F3BB;
+  cursor: pointer;
   margin-top: 10vw;
+}
+
+.hero__button:hover {
+  background: linear-gradient(225deg, #0000FF 0%, #00F0B8 100%);
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -279,13 +295,13 @@ header {
   }
   .hero__button {
     font-family: 'IBMPlexMono-Medium',monospace;
-    font-weight: 600;
     display: block;
     padding: .8em;
     text-align: center;
     width: 100%;
     line-height: 2.2rem;
     background-color: #00F3BB;
+    cursor: pointer;
     margin-top: 4vw;
     width: 25%;
     padding: .8em;
@@ -553,15 +569,20 @@ header {
 
 .novedades__button {
   font-family: 'IBMPlexMono-Medium',monospace;
-  font-weight: 600;
   display: block;
   padding: .8em;
   text-align: center;
   width: 100%;
   line-height: 2.2rem;
   background-color: #00F3BB;
+  cursor: pointer;
   margin: 3em auto;
   width: 90%;
+}
+
+.novedades__button:hover {
+  background-color: #00D3B8;
+  color: white;
 }
 
 @media only screen and (min-width: 600px) {

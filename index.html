@@ -16,10 +16,10 @@
             <input type="checkbox" id="toggle" class="toggle">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">episodios</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">nosotros</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">entrevistas</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">tópicos</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--active" href="#episodes">episodios</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#nosotros">nosotros</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#invitados">entrevistas</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#topicos">tópicos</a></li>
                 </ul>
             </nav>
             <!-- Hamburguer Menu -->
@@ -41,7 +41,7 @@
             <a class="hero__button">conocé más</a>
         </section>
 
-    <section class="episodes">
+    <section class="episodes" id="episodes">
         <h2 class="episodes__title">Episodios</h2>
         <article class="episodes__audios">
             <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0"
@@ -57,7 +57,7 @@
 
 
 
-    <section class="phone padding">
+    <section class="phone padding" id="nosotros">
         <img class="phone__img" src="images/phone.png" alt="The secret history of Women coding - Imagen">
         <article class="phone__info-block">
             <h2 class="info-block__title">De dónde venimos</h2>
@@ -74,7 +74,7 @@
 
 
 
-    <section class="invitados">
+    <section class="invitados" id="invitados">
         <h2 class="invitados__title">Invitadas/os estelares</h2>
         <article class="invitados__grid-view">
             <img class="invitados__img" src="images/grace-hopper.png" alt="Grace Hopper">
@@ -90,7 +90,7 @@
 
 
 
-    <section class="temas padding">
+    <section class="temas padding" id="topicos">
         <h2 class="temas__title">Algunos de nuestros temas</h2>
         <ul class="temas__list">
             <li class="temas__card">

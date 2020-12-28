@@ -46,6 +46,16 @@
         &__link{
             opacity: 1;
             color: $color-text-dark;
+            &:hover{
+                color: $color-accent;
+                text-decoration: line-through;
+                transition: 200ms;
+            }
+            &--active{
+                color: #060A24;
+                opacity: .56;
+                text-decoration: line-through;
+            }
         }
     }
 }

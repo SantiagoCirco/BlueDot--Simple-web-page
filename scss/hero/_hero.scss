@@ -21,6 +21,14 @@
     &__button{
         @include cta-button;
         margin-top: 10vw;
+        &:hover{
+        background: linear-gradient(
+            225deg, 
+            $color-primary-linear1 0%,
+            #00F0B8 100%
+        );
+        color: white;
+    }
        
     }
 }

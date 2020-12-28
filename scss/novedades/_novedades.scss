@@ -20,6 +20,10 @@
         @include cta-button;
         margin: 3em auto;
         width: 90%;
+        &:hover{
+            background-color: #00D3B8;
+            color: white;
+        }
     }
 }
 
