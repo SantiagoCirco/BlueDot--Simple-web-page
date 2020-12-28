@@ -28,5 +28,10 @@
         &__list{
             width: 40%;
         }
+        &__img:hover{
+            transform: scale(1.1,1.1);
+            cursor: pointer;
+            transition: 100ms;
+        }
     }
 }

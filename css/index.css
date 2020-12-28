@@ -460,6 +460,15 @@ header {
   height: auto;
 }
 
+.invitados__img:hover {
+  background-color: black;
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  position: relative;
+}
+
 @media only screen and (min-width: 500px) {
   .invitados__title {
     margin-left: 15%;
@@ -667,6 +676,13 @@ header {
   }
   .footer__list {
     width: 40%;
+  }
+  .footer__img:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    cursor: pointer;
+    -webkit-transition: 100ms;
+    transition: 100ms;
   }
 }
 /*# sourceMappingURL=index.css.map */
