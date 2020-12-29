@@ -10,47 +10,50 @@
 
 <body>
 
-        <header class="header padding">
-            <img class="header__logo" src="images/logo.svg" alt="">
-            <!-- Checkbox invisible (hamburguer menu function) -->
-            <input type="checkbox" id="toggle" class="toggle">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link nav__link--active" href="#episodes">episodios</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#nosotros">nosotros</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#invitados">entrevistas</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#topicos">tópicos</a></li>
-                </ul>
-            </nav>
-            <!-- Hamburguer Menu -->
-            <label for="toggle" class="toggle__label">
-                <span></span>
-            </label>
-        </header>
+    <header class="header padding">
+        <img class="header__logo" src="images/logo.svg" alt="">
+        <!-- Checkbox invisible (hamburguer menu function) -->
+        <input type="checkbox" id="toggle" class="toggle">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link--active" href="#episodes">episodios</a></li>
+                <li class="nav__item"><a class="nav__link" href="#nosotros">nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="#invitados">entrevistas</a></li>
+                <li class="nav__item"><a class="nav__link" href="#topicos">tópicos</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburguer Menu -->
+        <label for="toggle" class="toggle__label">
+            <span></span>
+        </label>
+    </header>
 
 
-        <section class="hero padding">
-            <h1 class="hero__title">Hello <s>world</s> pale blue dot<span class="hero__title--dot">.</span></h1>
-            <p class="hero__description--desktop">El portal de podcasts que explora el mundo de la programación y<br>
-                la tecnología. Nuevos episodios, todos los jueves cada 15 días.
-            </p>
-            <p class="hero__description--mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos
-                los
-                jueves cada 15 días.
-            </p>
-            <a class="hero__button">conocé más</a>
-        </section>
+    <section class="hero padding">
+        <h1 class="hero__title">Hello <s>world</s> pale blue dot<span class="hero__title--dot">.</span></h1>
+        <p class="hero__description--desktop">El portal de podcasts que explora el mundo de la programación y<br>
+            la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+        </p>
+        <p class="hero__description--mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos
+            los
+            jueves cada 15 días.
+        </p>
+        <a class="hero__button">conocé más</a>
+    </section>
 
     <section class="episodes" id="episodes">
         <h2 class="episodes__title">Episodios</h2>
         <article class="episodes__audios">
-            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0"
+            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="episodes__spotify"
+                src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0"
                 allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0"
+            <iframe class="episodes__spotify"
+                src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0"
                 allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0"
-                allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="episodes__spotify" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0"
+            <iframe class="episodes__spotify"
+                src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0"
                 allowtransparency="true" allow="encrypted-media"></iframe>
         </article>
     </section>
@@ -77,14 +80,33 @@
     <section class="invitados" id="invitados">
         <h2 class="invitados__title">Invitadas/os estelares</h2>
         <article class="invitados__grid-view">
-            <img class="invitados__img" src="images/grace-hopper.png" alt="Grace Hopper">
-            <img class="invitados__img" src="images/Katie-Bouman.png" alt="Katie Bouman">
-            <img class="invitados__img" src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
-            <img class="invitados__img" src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
-                alt="Una computadora E.R.A. Univac 1103 de los 50s">
-            <img class="invitados__img" src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-                alt="Operadoras de la computadora Eniac - La primera computadora programable en el mundo.">
-            <img class="invitados__img" src="images/susan-kare.png" alt="Susan Kare">
+            <div class="invitados__card">
+                <img class="invitados__img" src="images/grace-hopper.png" alt="Grace Hopper">
+                <p class="invitados__description">Grace Hopper</p>
+            </div>
+            <div class="invitados__card">
+                <img class="invitados__img" src="images/Katie-Bouman.png" alt="Katie Bouman">
+                <p class="invitados__description">Katie Bouman</p>
+            </div>
+            <div class="invitados__card">
+                <img class="invitados__img" src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <p class="invitados__description">Margaret Hamilton</p>
+            </div>
+            <div class="invitados__card">
+                <img class="invitados__img" src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
+                    alt="Una computadora E.R.A. Univac 1103 de los 50s">
+                <p class="invitados__description">Una computadora E.R.A. Univac 1103 de los 50s</p>
+            </div>
+            <div class="invitados__card">
+                <img class="invitados__img"
+                    src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                    alt="Eniac : La primera computadora programable en el mundo.">
+                <p class="invitados__description">Operadoras de la computadora Eniac - La primera computadora programable en el mundo.</p>
+            </div>
+            <div class="invitados__card">
+                <img class="invitados__img" src="images/susan-kare.png" alt="Susan Kare">
+                <p class="invitados__description">Susan Kare</p>
+            </div>
         </article>
     </section>
 

@@ -1,20 +1,20 @@
 .phone{
-    // width: 90%;
-    // margin: auto;
+    min-height: 100vh;
     &__img{
         width: 100%;
         height: auto;
         margin-top: 2em;
     }
-    &__info-block{
+}
+
+.info-block{
         &__title{
         margin-top: 1.4rem;
         }
         &__description{
             margin-top: 1.4em;
         }
-    }   
-}
+    }
 
 @media only screen and (min-width:768px){
     .phone{
@@ -24,32 +24,37 @@
         &__img{
             width: 30%;
         }
+        
         &__info-block{
-            width: 40%;
+            width: 60%;
             margin: 0;
-            &__title{
-            font-size: 3.6rem;
-            margin-top: 3rem;
-            }
-            &__description{
-            font-size: 1.4rem;
-            margin-top: 1rem;
         }
+    }
+    .info-block{
+        &__title{
+            font-size: 4.8rem;
         }
+        &__description{
+            font-size: 1.6rem;
+            margin-top: 2rem;
+        }   
     }
 }
 
-@media only screen and (min-width:900px){
-    .phone{
-        &__info-block{
+@media only screen and (min-width:1000px){
+    .phone__info-block{
             width: 36%;
-            &__title{
-            font-size: 4.8rem;
-            }
-            &__description{
-            font-size: 1.6rem;
-            }
         }
+    .info-block{
+        &__title{
+            width:100%;
+            font-size: 4.8rem;
+            margin-bottom: .8em;
+        }
+        &__description{
+            font-size: 1.6rem;
+            margin-top: 1rem;
+        }   
     }
    
 }

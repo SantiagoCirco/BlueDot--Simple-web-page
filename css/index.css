@@ -378,17 +378,21 @@ header {
   }
 }
 
+.phone {
+  min-height: 100vh;
+}
+
 .phone__img {
   width: 100%;
   height: auto;
   margin-top: 2em;
 }
 
-.phone__info-block__title {
+.info-block__title {
   margin-top: 1.4rem;
 }
 
-.phone__info-block__description {
+.info-block__description {
   margin-top: 1.4em;
 }
 
@@ -408,28 +412,30 @@ header {
     width: 30%;
   }
   .phone__info-block {
-    width: 40%;
+    width: 60%;
     margin: 0;
   }
-  .phone__info-block__title {
-    font-size: 3.6rem;
-    margin-top: 3rem;
+  .info-block__title {
+    font-size: 4.8rem;
   }
-  .phone__info-block__description {
-    font-size: 1.4rem;
-    margin-top: 1rem;
+  .info-block__description {
+    font-size: 1.6rem;
+    margin-top: 2rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   .phone__info-block {
     width: 36%;
   }
-  .phone__info-block__title {
+  .info-block__title {
+    width: 100%;
     font-size: 4.8rem;
+    margin-bottom: .8em;
   }
-  .phone__info-block__description {
+  .info-block__description {
     font-size: 1.6rem;
+    margin-top: 1rem;
   }
 }
 
@@ -455,6 +461,12 @@ header {
           flex-direction: column;
 }
 
+.invitados__card {
+  margin: -1%;
+  padding: 0;
+  position: relative;
+}
+
 .invitados__img {
   width: 100%;
   height: auto;
@@ -462,11 +474,27 @@ header {
 
 .invitados__img:hover {
   background-color: black;
-  -webkit-filter: brightness(0.2);
-          filter: brightness(0.2);
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
   -webkit-transition: 200ms;
   transition: 200ms;
-  position: relative;
+}
+
+.invitados__img:hover ~ p {
+  display: block;
+}
+
+.invitados__description {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  font-size: 2rem;
+  right: 0;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 0 2em;
+  display: none;
 }
 
 @media only screen and (min-width: 500px) {
@@ -483,8 +511,13 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .invitados__img {
+  .invitados__card {
+    margin: 0;
+    margin-bottom: -1%;
     width: 33.3%;
+  }
+  .invitados__img {
+    width: 100%;
   }
 }
 
