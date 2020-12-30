@@ -43,6 +43,24 @@
     opacity: 1;
 }
 
+.toggle:checked + nav + .toggle__label span{
+    transform: rotate(45deg);
+    transform-origin: 0;
+    bottom: 6px;
+    left:6px;
+    transition: 150ms;
+}
+
+.toggle:checked + nav + .toggle__label span::after {
+    opacity: 0;
+}
+.toggle:checked + nav + .toggle__label span::before {
+    transform: rotate(-90deg);
+    top:0;
+    transition: 150ms;
+}
+
+
 
 @media only screen and (min-width :768px){
     .toggle__label{

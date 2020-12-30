@@ -208,6 +208,29 @@ ul {
   opacity: 1;
 }
 
+.toggle:checked + nav + .toggle__label span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
+  bottom: 6px;
+  left: 6px;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.toggle:checked + nav + .toggle__label span::after {
+  opacity: 0;
+}
+
+.toggle:checked + nav + .toggle__label span::before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 0;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
 @media only screen and (min-width: 768px) {
   .toggle__label {
     display: none;
