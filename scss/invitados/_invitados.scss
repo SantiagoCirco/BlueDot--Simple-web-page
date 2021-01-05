@@ -15,18 +15,19 @@
         margin: -1%; // HACK : Quitar espacio entre imgenes
         padding: 0;
         position: relative;
-    }
-    &__img{
-        width: 100%;
-        height: auto;    
-        &:hover{
+        &:hover img{
             background-color: black;
             filter: brightness(.1);
             transition: 200ms;
         }
-        &:hover ~ p{
+        &:hover p{
             display: block;
         }
+    }
+    &__img{
+        width: 100%;
+        height: auto;    
+        
     }
     &__description{
         position: absolute;

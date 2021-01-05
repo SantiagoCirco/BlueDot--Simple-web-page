@@ -490,12 +490,7 @@ header {
   position: relative;
 }
 
-.invitados__img {
-  width: 100%;
-  height: auto;
-}
-
-.invitados__img:hover {
+.invitados__card:hover img {
   background-color: black;
   -webkit-filter: brightness(0.1);
           filter: brightness(0.1);
@@ -503,8 +498,13 @@ header {
   transition: 200ms;
 }
 
-.invitados__img:hover ~ p {
+.invitados__card:hover p {
   display: block;
+}
+
+.invitados__img {
+  width: 100%;
+  height: auto;
 }
 
 .invitados__description {
