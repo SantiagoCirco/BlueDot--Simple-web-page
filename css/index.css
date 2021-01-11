@@ -711,9 +711,8 @@ header {
       justify-content: space-around;
 }
 
-.footer__img {
-  width: 16px;
-  height: auto;
+.footer__link {
+  color: #060A24;
 }
 
 @media only screen and (min-width: 600px) {
@@ -737,8 +736,8 @@ header {
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1);
     cursor: pointer;
-    -webkit-transition: 100ms;
-    transition: 100ms;
+    -webkit-transition: 200ms;
+    transition: 200ms;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -13,9 +13,8 @@
         display: flex;
         justify-content: space-around;
     }
-    &__img{
-        width: 16px;
-        height: auto;
+    &__link{
+        color: $color-text-dark;
     }
 }
 
@@ -31,7 +30,7 @@
         &__img:hover{
             transform: scale(1.1,1.1);
             cursor: pointer;
-            transition: 100ms;
+            transition: 200ms;
         }
     }
 }
