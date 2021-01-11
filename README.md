@@ -2,4 +2,6 @@
 
 Es el proyecto para terminar el sprint N°1  de Acámica.
 
-Para ejecutar, abrir el archivo "index.html" en el navegador.
+Sitio : https://santiagocirco.github.io/Podcast-Acamica/
+
+repo : https://github.com/SantiagoCirco/Podcast-Acamica
