@@ -1,0 +1,81 @@
+.invitados{
+    margin-top: 12%;
+    // width: 100%;
+    &__title{
+        margin-left: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    &__grid-view{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__card{
+        margin: -1%; // HACK : Quitar espacio entre imgenes
+        padding: 0;
+        position: relative;
+        &:hover img{
+            background-color: black;
+            filter: brightness(.1);
+            transition: 200ms;
+        }
+        &:hover p{
+            display: block;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: auto;    
+        
+    }
+    &__description{
+        position: absolute;
+        top: 45%;
+        left: 0;
+        font-size: 2rem;
+        right: 0;
+        text-align: center;
+        color: white;
+        z-index: 1;
+        padding: 0 2em;
+        // No es visible hasta el hover de la imagen
+        display: none;
+    }
+}
+
+@media only screen and (min-width:500px){
+    .invitados{
+        &__title{
+            margin-left: 15%;
+            margin-bottom: 3.6rem;
+        }
+        &__grid-view{
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__card{
+            margin: 0;
+            margin-bottom: -1%;
+            width: 33.3%;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .invitados{
+        margin-top: 2%;
+    }
+}
+
+
+@media only screen and (min-width:1440px){
+    .invitados{
+        max-width: 1440px;
+        margin: auto;
+    }
+}

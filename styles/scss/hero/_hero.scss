@@ -1,0 +1,61 @@
+
+@import '../components/cta-button';
+
+.hero{
+    padding: 10vw 0 1.6rem 0;
+    &__title{
+        width: 90%;
+        &--dot{
+            color: $color-primary;
+        }
+    }
+    &__description{
+        color: $color-text-dark; 
+        &--mobile{
+            margin-top: 6vw;
+        }
+        &--desktop{ 
+            display: none;
+        }
+    }
+    &__button{
+        @include cta-button;
+        margin-top: 10vw;
+        &:hover{
+        background: linear-gradient(
+            225deg, 
+            $color-primary-linear1 0%,
+            #00F0B8 100%
+        );
+        color: white;
+    }
+       
+    }
+}
+
+
+@media only screen and (min-width:768px){
+    .hero{
+        padding-left: 8vw;
+        &__title{
+            line-height: 8.4rem;
+        }
+        &__description{
+            &--mobile{
+                display:none;
+            }
+            &--desktop{
+                display:block;
+                padding-left: .5rem;
+            }
+        }
+        &__button{
+            @include cta-button;
+            margin-top: 4vw;
+            width: 25%;    
+            padding: .8em;
+            line-height: 2.2rem;
+        }
+
+    }
+}

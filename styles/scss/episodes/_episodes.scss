@@ -1,0 +1,75 @@
+.episodes{
+    position: relative;
+    color: white;
+    &__title{
+        font-size:3.6rem;
+        margin-top: 22%;
+        margin-left:$margin-left-titles;
+        margin-bottom: 5%;
+    }
+    &::before{
+        content: '';
+        height: 120%;
+        background-image: linear-gradient(
+            90deg,
+            $color-primary-linear2,
+            $color-primary-linear1
+        );
+        position: absolute;
+        width: 100%;
+        top: -5%; // Hack : El contenendor de fondo está forzado para que coincida
+        z-index: -5;
+        transform: skew(0,-6deg);
+    }
+    &__audios{
+        width: 90%;
+        margin: auto;
+    }
+    &__spotify{
+        margin-bottom: .6em;
+        width: 100%;
+        height:232px;
+        border: 0;
+    }
+}
+
+
+
+@media only screen and (min-width:768px){
+    .episodes{
+        &__title{
+            font-size:4.8rem;
+            margin-top: 12%;
+            padding-left: $margin-left-titles;
+        }
+        &::before{
+            top: -15%;
+            height: 130%;
+        }
+        &__audios{
+            display: flex;
+            width: 85%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__spotify{
+            margin-bottom: 2em;
+            width: 45%;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .episodes{
+        &__title{
+            margin-left: 11%;
+        }
+    }
+}
+
+@media only screen and (min-width:1440px){
+    .episodes{
+        max-width: 1440px;
+        margin: auto;
+    }
+}

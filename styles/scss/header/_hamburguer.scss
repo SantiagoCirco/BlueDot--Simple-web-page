@@ -1,0 +1,69 @@
+
+
+
+
+
+// - Toggle es el input del tipo checkbox
+// - label es donde está el contenedor del hamburguer menu (lo que se ve en pantalla)
+.toggle{
+    display: none;
+    &__label{
+        position: absolute;
+        right: 0;
+        top:0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        // El span y su [before] y [after] crean las tres líneas del menu hamburguesa
+        span,span::after,span::before{
+            display: block;
+            height: 2px;
+            background-color: black;
+            width: 20px;
+            position:relative;
+        }
+        span::before,span::after{
+            position: absolute;
+            content:'';
+        }
+        span{
+            &::before{  top:    6px; }
+            &::after {  bottom: 6px; }
+        }
+    }
+}
+
+
+// Al activar el toggle, aparece la barra de navegacion con sus items
+.toggle:checked ~ nav{
+    transform: scale(1,1);
+    transition: transform 400ms ease-in-out;
+}
+.toggle:checked ~ nav a{
+    opacity: 1;
+}
+
+.toggle:checked + nav + .toggle__label span{
+    transform: rotate(45deg);
+    transform-origin: 0;
+    bottom: 6px;
+    left:6px;
+    transition: 150ms;
+}
+
+.toggle:checked + nav + .toggle__label span::after {
+    opacity: 0;
+}
+.toggle:checked + nav + .toggle__label span::before {
+    transform: rotate(-90deg);
+    top:0;
+    transition: 150ms;
+}
+
+
+
+@media only screen and (min-width :768px){
+    .toggle__label{
+        display: none;
+    }
+}

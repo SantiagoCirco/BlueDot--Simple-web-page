@@ -1,0 +1,10 @@
+@mixin cta-button{
+    font-family: 'IBMPlexMono-Medium',monospace;
+    display: block;
+    padding: .8em;
+    text-align: center;
+    width: 100%;
+    line-height: 2.2rem;
+    background-color: $color-accent;
+    cursor: pointer;
+}
